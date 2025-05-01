@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import NSCADLOGO from '../images/nsc-app-dev-color.png';
+import NSCADLOGO from '../images/nextwavedev.png';
 import {WhiteSpacing} from "./microComponents/navbar/whiteSpacing";
 import {Item} from "./microComponents/navbar/item";
 
@@ -14,7 +14,7 @@ const Navbar =()=>{
             alignItems: "center"
         }}>
             <Link to={"/"}>
-                <img src={NSCADLOGO} alt="nsc app dev logo" style={{width: "4rem", height: "4rem", marginLeft: "1rem", marginRight: ".5rem"}} />
+                <img src={NSCADLOGO} alt="Next Wave Dev Logo" style={{width: "4rem", height: "4rem", marginLeft: "1rem", marginRight: ".5rem"}} />
             </Link>
             <Item name={"Contact"} />
             <WhiteSpacing />
