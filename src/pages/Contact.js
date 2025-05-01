@@ -9,7 +9,7 @@ function Contact() {
   return (
     <>
       <Helmet>
-        <title> NSC App Development - Contact </title>
+        <title> Next Wave Dev - Contact </title>
       </Helmet>
       <Navbar />
       <div style={{ minHeight: "calc(100vh - 95px)", height: "1px" }}>

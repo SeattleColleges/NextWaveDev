@@ -80,7 +80,7 @@ const PortfolioPage = () => {
   return (
     <div>
       <Helmet>
-        <title> NSC App Development - Portfolio </title>
+        <title> Next Wave Dev - Portfolio </title>
       </Helmet>
       <Navbar />
       <div style={{ minHeight: "calc(100vh - 95px)", height: "1px" }}>
