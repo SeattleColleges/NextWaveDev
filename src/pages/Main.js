@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import belindas from '../images/belindasmobile.png';
 import pelletier from '../images/pelletier.png';
-import StudentThumbnail from "../components/StudentThumbnail";
+import DeveloperThumbnail from "../components/DeveloperThumbnail";
 import studentData from "../students.json";
 import { Helmet } from "react-helmet";
 import { FormComponent } from "../components/microComponents/contact/form";
@@ -71,14 +71,14 @@ function Main() {
         <div className="student-prev__gallery">
           <div className="student-prev__gallery__grid">
             {studentDataSlice.map((student, index) => (
-              <StudentThumbnail
+              <DeveloperThumbnail
                 fileName={student.photo}
                 studentName={student.name}
               />
             ))}
           </div>
           <Link className="student-prev__gallery__link" to={"/Developers"}>
-            Get to know our student developers
+            Get to know our developers
           </Link>
         </div>
         <p className="student-prev__quote">

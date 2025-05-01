@@ -1,6 +1,6 @@
-const StudentThumbnail = ({fileName, studentName}) =>{
+const DeveloperThumbnail = ({fileName, studentName}) =>{
     return (
         <img className="student-thumbnail" src={require('../images/students/'+fileName)} alt={"photo of "+studentName}/>
     )
 }
-export default StudentThumbnail
+export default DeveloperThumbnail
