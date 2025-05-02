@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import belindas from '../images/belindasmobile.png';
 import pelletier from '../images/pelletier.png';
-import StudentThumbnail from "../components/StudentThumbnail";
+import DeveloperThumbnail from "../components/DeveloperThumbnail";
 import studentData from "../students.json";
 import { Helmet } from "react-helmet";
 import { FormComponent } from "../components/microComponents/contact/form";
@@ -18,7 +18,7 @@ function Main() {
   return (
     <>
       <Helmet>
-        <title> NSC App Development </title>
+        <title> Next Wave Dev </title>
       </Helmet>
       <Navbar />
       <div className="homepage-content">
@@ -26,10 +26,10 @@ function Main() {
           <div className="hero">
             <div className="hero__text">
               <h1 className="hero__text__heading">
-                North Seattle Application Development
+                Next Wave Dev
               </h1>
               <p className="hero__text__subheading">
-                Preparing students for immediate employment in a high-demand field
+              Bridging the gap between classroom learning and career success, we equip students and recent graduates with the skills, mentorship, and real-world experience needed to deliver high-quality tech solutions.
               </p>
             </div>
           </div>
@@ -71,14 +71,14 @@ function Main() {
         <div className="student-prev__gallery">
           <div className="student-prev__gallery__grid">
             {studentDataSlice.map((student, index) => (
-              <StudentThumbnail
+              <DeveloperThumbnail
                 fileName={student.photo}
                 studentName={student.name}
               />
             ))}
           </div>
-          <Link className="student-prev__gallery__link" to={"/Students"}>
-            Get to know our student developers
+          <Link className="student-prev__gallery__link" to={"/Developers"}>
+            Get to know our developers
           </Link>
         </div>
         <p className="student-prev__quote">

@@ -2,8 +2,9 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import React from "react";
-import Student from "../components/Student";
+import Developer from "../components/Developer";
 import data from "../students.json";
+import { Helmet } from "react-helmet";
 
 // const students = [
 //   {
@@ -26,14 +27,17 @@ import data from "../students.json";
 
 const students = data.students;
 
-const StudentsPage = () => {
+const DevelopersPage = () => {
   return (
     <div>
+      <Helmet>
+        <title> Next Wave Dev - Developers </title>
+      </Helmet>
       <Navbar />
       <div className="students-flexcolumn">
-        <h1 className="students-flexcolumn__h1">Our Students</h1>
+        <h1 className="students-flexcolumn__h1">Our Developers</h1>
         {students.map((student, index) => (
-          <Student key={index} {...student} />
+          <Developer key={index} {...student} />
         ))}
       </div>
       <Footer />
@@ -53,4 +57,4 @@ const styles = {
   },
 };
 
-export default StudentsPage;
+export default DevelopersPage;

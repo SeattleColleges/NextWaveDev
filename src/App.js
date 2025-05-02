@@ -4,7 +4,7 @@ import Main from './pages/Main'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import PortfolioPage from './pages/PortfolioPage'
-import StudentsPage from './pages/StudentsPage'
+import DevelopersPage from './pages/DevelopersPage'
 import ReactGA from "react-ga4";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
             <Route path='/Contact' element={<Contact />} />
             <Route path='/About' element={<About />} />
             <Route path='/Portfolio' element={<PortfolioPage />} />
-            <Route path='/Students' element={<StudentsPage />} />
+            <Route path='/Developers' element={<DevelopersPage />} />
         </Routes>
     </Router>
   );

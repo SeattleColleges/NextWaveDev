@@ -20,7 +20,7 @@ const Navbar =()=>{
             <WhiteSpacing />
             <Item name={"About"} />
             <WhiteSpacing />
-            <Item name={"Students"} />
+            <Item name={"Developers"} />
             <WhiteSpacing />
             <Item name={"Portfolio"} />
         </div>

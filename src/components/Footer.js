@@ -46,7 +46,7 @@ const Footer = () => {
               <FooterLink name="About" />
             </li>
             <li>
-              <FooterLink name="Students" />
+              <FooterLink name="Developers" />
             </li>
             <li>
               <FooterLink name="Portfolio" />
