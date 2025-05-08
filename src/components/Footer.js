@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FooterLink } from "./microComponents/footer/footerLink";
 import { Separator } from "./microComponents/footer/separator";
-import NSCTREEFROG from "../images/north-seattle-tree-frogs.png";
+import NEXTWAVEDEV from "../images/nextwavedev.png";
 
 const Footer = () => {
   return (
@@ -58,10 +58,10 @@ const Footer = () => {
           <h4 style={{ ...footerCategory }}>Contact Us</h4>
           <Separator />
           <Link
-            to={"mailto:northseattle.appdev@gmail.com"}
+            to={"mailto:nextwavedev.org@gmail.com"}
             style={{ textDecoration: "none" }}
           >
-            <li style={{ ...footerList }}>northseattle.appdev@gmail.com</li>
+            <li style={{ ...footerList }}>nextwavedev.org@gmail.com</li>
           </Link>
         </ul>
       </div>
@@ -75,27 +75,13 @@ const Footer = () => {
           alignItems: "center",
         }}
       >
-        <ul style={{ ...footerList }}>
-          <h4 style={{ ...footerCategory }}>Become a student</h4>
-          <Separator />
-          <li>
-            <Link
-              to={
-                "https://northseattle.edu/programs/application-development/application-development-bachelor-applied-science-bas-degree"
-              }
-              style={{ textDecoration: "none" }}
-            >
-              <p style={{ ...footerList }}>Click here to learn how!</p>
-            </Link>
-          </li>
-        </ul>
 
         <Link to={"https://northseattle.edu/"}>
           <img
-            src={NSCTREEFROG}
-            alt="nsc app dev logo"
+            src={NEXTWAVEDEV}
+            alt="next wave dev logo"
             style={{
-              width: "11rem",
+              width: "6rem",
             }}
           />
         </Link>
