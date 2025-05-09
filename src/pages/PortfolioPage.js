@@ -94,7 +94,7 @@ const projects = [
     screenshot: shiftAppScreenshot
   },
   {
-    title: 'GeekGirlCon Registration',
+    title: 'GeekGirlCon Mobile App',
     company: 'North Seattle College',
     status: 'In Progress',
     socialMedia: [
@@ -107,7 +107,7 @@ const projects = [
         link: 'https://geekgirlcon.com//'
       }
     ],
-    description: "This project supports GeekGirlCon by enabling online registration for events, volunteers, and attendees. Developed with Next.js, MongoDB, and Tailwind.",
+    description: "GeekGirlCon Mobile App is a student-built mobile application developed for GeekGirlCon using React Native Expo, SQLite, and Tailwind. It aims to support event visibility and mobile experience.",
     screenshot: geekGirlConScreenshot
   },
   {
