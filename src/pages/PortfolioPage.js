@@ -9,9 +9,11 @@ import page1 from '../images/projects/pelletier/pelletier.png'
 import page2 from '../images/projects/nsc_portfolio/homepage.png'
 import page3 from '../images/projects/belindas_closet/home_page_light.png'
 import page4 from '../images/projects/nsc_events/home_page_not_signed_in.png'
+import shiftAppScreenshot from '../images/projects/shiftapp/shiftapp_home.png';
+import geekGirlConScreenshot from '../images/projects/geekgirlcon/geekgirl_home.png';
+import lictonSpringsScreenshot from '../images/projects/licton_springs/licton_springs_home.png';
 import {faLink} from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
-
 
 const projects = [
   {
@@ -74,6 +76,57 @@ const projects = [
     description: "North Seattle College Events (NSC Events) is a student built website that allows all students to view upcoming events occurring at the college, and for administrators to add and manage event announcements through the website.",
     screenshot: page4
   },
+  {
+    title: 'Shift App',
+    company: 'North Seattle College',
+    status: 'In Development',
+    socialMedia: [
+      {
+        icon: faGithub,
+        link: 'https://github.com/SeattleColleges/shift-app-expo'
+      },
+      {
+        icon: faLink,
+        link: 'https://expo.dev/'
+      },
+    ],
+    description: "Shift App is a scheduling platform developed for interns and staff at Meta. It streamlines work shift management, check-ins, and admin oversight. Built with React Native and Firebase.",
+    screenshot: shiftAppScreenshot
+  },
+  {
+    title: 'GeekGirlCon Mobile App',
+    company: 'North Seattle College',
+    status: 'In Progress',
+    socialMedia: [
+      {
+        icon: faGithub,
+        link: 'https://github.com/GeekGirlCon'
+      },
+      {
+        icon: faLink,
+        link: 'https://geekgirlcon.com//'
+      }
+    ],
+    description: "GeekGirlCon Mobile App is a student-built mobile application developed for GeekGirlCon using React Native Expo, SQLite, and Tailwind. It aims to support event visibility and mobile experience.",
+    screenshot: geekGirlConScreenshot
+  },
+  {
+    title: 'Licton Springs Review',
+    company: 'North Seattle College',
+    status: 'In Progress',
+    socialMedia: [
+      {
+        icon: faGithub,
+        link: 'https://github.com/SeattleColleges/licton-springs-review-nextjs'
+      },
+      {
+        icon: faLink,
+        link: 'https://lictonspringsreview.com/'
+      },
+    ],
+    description: "Licton Springs Review is an immersive digital journal built by students at North Seattle College to showcase visual and literary art. Rebuilt from scratch with Next.js and Tailwind CSS for a modern, mobile-friendly experience.",
+    screenshot: lictonSpringsScreenshot
+  }
 ];
 
 const PortfolioPage = () => {
@@ -95,7 +148,6 @@ const PortfolioPage = () => {
                 marginBottom: "1rem",
               }}
             >
-              {" "}
               Portfolio Page
             </h1>
             <div
@@ -153,8 +205,7 @@ function PortfolioComponent(props) {
         className={"col-sm-6 flex-xs-center"}
       >
         <h2 style={{ fontSize: "28px", marginBottom: ".3rem" }}>
-          {" "}
-          {props.title}{" "}
+          {props.title}
         </h2>
         <div style={{ color: "#858585", marginBottom: ".75rem" }}>
           {props.company} — {props.status}
@@ -181,7 +232,6 @@ function PortfolioComponent(props) {
     </div>
   );
 }
-
 
 const styles = {
   container: {
