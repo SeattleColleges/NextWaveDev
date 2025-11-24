@@ -1,1 +1,1 @@
-View this site at [SeattleColleges.github.io](https://seattlecolleges.github.io/)
+View this site at [next-wave-dev.pages.dev](https://next-wave-dev.pages.dev/)
